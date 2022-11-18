@@ -1,0 +1,148 @@
+<html>
+
+<head>
+  <!-- link is used to import css -->
+  <!-- rel = stylesheet, css. rel = preconnect, connecting with the corresponding website -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Belleza&family=Crimson+Pro&family=Libre+Franklin&display=swap" rel="stylesheet">
+  <!-- script tags are used to import javascript -->
+  <script src="https://kit.fontawesome.com/00b2edbba7.js" crossorigin="anonymous"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <!-- HEADER -->
+  <header id="main-header" class="main-header header">
+    <div class="main-wrap">
+      <div class="header-wrap-inner">
+        <div class="left-part">
+          <a href="#main">
+            <img id="logo" class="logo" src="https://www.pngmart.com/files/22/User-Avatar-Profile-PNG.png" alt="">
+          </a>
+        </div>
+        <div class="right-part">
+          <!-- NAV -->
+          <button id="burger" class="open-main-nav">
+            <span class="burger"></span>
+            <span class="burger-text">Menu</span>
+          </button>
+          <nav id="main-nav" class="main-nav" role="navigation">
+            <ul id="main-menu" class="menu">
+              <li id="menu-item-1" class="page_item page-item-1"></li>
+              <a href="#main" aria-label="Home">Home</a>
+              <li id="menu-item-2" class="page_item page-item-2"></li>
+              <a href="#about" aria-label="about">About</a>
+              <li id="menu-item-3" class="page_item page-item-3"></li>
+              <a href="#skills" aria-label="skills">Skills</a>
+              <li id="menu-item-4" class="page_item page-item-4"></li>
+              <a href="#projects" aria-label="projects">Projects</a>
+              <li id="menu-item-5" class="page_item page-item-5"></li>
+              <a href="#contact" aria-label="contact">Contact</a>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+
+  <main id="main" class="main-text-content">
+    <section id="about" class="section-about">
+      <div class="wrapper">
+        <h2>About</h2>
+        <div class="container-content">
+          <div class="container-img-profile">
+            <img src="https://www.pngmart.com/files/22/User-Avatar-Profile-PNG.png" alt="">
+          </div>
+          <div class="container-text">
+            <h3>Full-Stack Developer</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" section="contact">
+      <div class="wrapper">
+        <h2>Contact</h2>
+        <div class="container-content">
+          <h3>Connect with me</h3>
+          <p>Feel free to drop a message
+          <p>
+          <div class="container-form">
+            <form id="home-contact" class="contact-form" action="#" method="POST">
+              <div id="form-row01" class="form-row">
+                <div id="field01" class="field">
+                  <label for="name">Name
+                    <span class="required">*</span>
+                  </label>
+                  <input type="text" name="name" id="name" required="required">
+                </div>
+                <div id="field02" class="field">
+                  <label for="name">Email
+                    <span class="required">*</span>
+                  </label>
+                  <input type="email" name="email" id="email" required="required">
+                </div>
+              </div>
+
+              <div id="form-row02" class="form-row">
+                <div id="field03" class="field">
+                  <label for="message" class="message">Message
+                    <span class="required">*</span>
+                  </label>
+                  <textarea type="textbox" name="message" id="message" required="required">
+                  </textarea>
+
+                </div>
+              </div>
+              <button id="form-button" class="button" type="submit">
+                <div class="button-content">Send</div>
+              </button </form>
+          </div </div>
+        </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="wrapper">
+      <div class="container-content">
+        <p>© Sai Adarsh S, XYZ Pvt. Ltd.</p>
+      </div>
+      <div class="container-social">
+        <div class="container-icons">
+          <ul id="footer-social" class="footer-social">
+            <li id="footer-social-1" class="social-item">
+              <a href="https://www.linkedin.com/in/sai-adarsh/" target="_blank" aria-label="linkedin">
+                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+              </a>
+
+            </li>
+            <li id="footer-social-2" class="social-item">
+              <a href="https://github.com/sai-Adarsh/" target="_blank" aria-label="linkedin">
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
+              </a>
+
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

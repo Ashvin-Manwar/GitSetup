@@ -1,0 +1,968 @@
+html {
+    overflow-x: hidden;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    padding: 0;
+  }
+  
+  body {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-size: 16px;
+    color: #252525;
+    font-family: Helvetica;
+    overflow: hidden;
+  }
+  
+  header {
+    margin: 0;
+    border: 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background: #111;
+    overflow: hidden;
+  }
+  
+  .main-wrap {
+    display: flex;
+    margin: 0 auto;
+    padding: 0 8%;
+    height: 100px;
+    max-width: 1280px;
+    align-items: center;
+  }
+  
+  .header-wrap-inner {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .left-part {
+    display: block;
+    margin: -6%;
+    float: left;
+    width: auto;
+  }
+  
+  .main-header .left-part:hover {
+    opacity: 0.5;
+  }
+  
+  .right-part {
+    display: block;
+    width: auto;
+  }
+  
+  #logo {
+    display: block;
+    float: auto;
+    width: 100px;
+  }
+  
+  nav ul {
+    display: flex;
+    margin: 0;
+    border: 0;
+    padding: 0;
+  }
+  
+  nav a:hover {
+    color: #e8f80e !important;
+  }
+  
+  nav #main-menu > a:nth-child(10):hover {
+    color: #f50ec7 !important;
+  }
+  
+  #main-menu li {
+    list-style: none;
+  }
+  
+  #main-menu a {
+    display: block;
+    font-size: 18px;
+    padding: 5px 10px;
+    color: white;
+    text-decoration: none;
+    font-family: "Libre Franklin", sans-serif;
+  }
+  
+  #main-menu > a:nth-child(10) {
+    color: red;
+  }
+  
+  main {
+    margin-top: 100px;
+  }
+  
+  section {
+    margin: 0;
+    padding: 8rem 0 0 0;
+  }
+  
+  #about {
+    padding: 2rem 0 0 0;
+  }
+  
+  .wrapper {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 8%;
+  }
+  
+  h1 {
+    font-family: "Belleza", sans-serif;
+  }
+  
+  h2 {
+    font-family: "Belleza", sans-serif;
+    color: blue;
+    text-transform: uppercase;
+    margin: 0 0 50px;
+    letter-spacing: 0.06rem;
+  }
+  
+  h3 {
+    font-family: "Crimson Pro", serif;
+    font-size: 24px;
+    color: #1c2273;
+    text-transform: capitalize;
+    margin: 0 0 1rem;
+    letter-spacing: 0.04rem;
+  }
+  
+  h4 {
+    font-family: "Crimson Pro", serif;
+    font-size: 20px;
+    margin: 0 0 0.4rem;
+    letter-spacing: 0.03rem;
+  }
+  
+  h5 {
+    font-family: "Crimson Pro", serif;
+    font-size: 18px;
+    margin: 0 0 0.4rem;
+    letter-spacing: 0.02rem;
+  }
+  
+  p,
+  ul {
+    font-family: Helvetica;
+    font-size: 1.1rem;
+    text-align: justify;
+    line-height: 1.55;
+  }
+  
+  p a {
+    color: #654aa0;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  p span.half-overline {
+    background: linear-gradient(to top, yellow 50%, transparent 50%);
+  }
+  
+  .container-content {
+    display: flex;
+  }
+  
+  .container-img-profile {
+    width: 33%;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  
+  .container-img-profile img {
+    border-radius: 50%;
+  }
+  
+  img {
+    display: block;
+    width: 100%; /* Afficher l'image dans son entiereté */
+    min-width: 100%;
+  }
+  
+  .container-text {
+    width: 70%;
+    padding-left: 5%;
+    padding-top: 5%s;
+  }
+  
+  .cols {
+    display: flex;
+  }
+  
+  .cols img {
+    width: 1rem;
+    min-width: 5%;
+  }
+  
+  .cols img,
+  .cols devicon devicon-html5-plain,
+  .cols p {
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .box-icon {
+    text-align: center;
+  }
+  
+  .cols .devicon {
+    display: inline-block;
+    width: 100%;
+  }
+  
+  .left-col,
+  .middle-col,
+  .right-col {
+    width: 30%;
+    margin: 0 auto;
+  }
+  
+  .left-col > h3,
+  .middle-col > h3,
+  .right-col > h3 {
+    text-align: center;
+  }
+  
+  .square {
+    border-color: black;
+    border: solid 0.1em;
+    padding: 0.3rem;
+    height: 200px;
+    border-radius: 10px;
+  }
+  
+  .container-icons {
+    margin: 10px;
+  }
+  
+  .container-project {
+    display: flex;
+    flex-direction: row;
+    padding: 0 0 10% 0;
+  }
+  
+  #container-project3 img {
+    width: 100%;
+  }
+  
+  .container-project .container-text {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 60%;
+  }
+  
+  .container-project .container-img {
+    display: flex;
+    flex-direction: row;
+    flex: 0 0 30%;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    border: 1px solid black;
+  }
+  
+  #container-project2 .container-img {
+    border: none;
+  }
+  
+  #container-project2 .container-img {
+    flex: 0 0 20%;
+  }
+  
+  #container-project2 .container-text {
+    flex: 0 0 70%;
+  }
+  
+  #container-project3 {
+    padding: 0;
+  }
+  
+  /*Début : Flexbox img & text : code css permettant de rendre responsive une ligne composée de deux blocs img et text côte à côte*/
+  
+  .project-container-screenshot {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .project-container-screenshot img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: auto;
+    width: auto;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+  }
+  @supports (project-container-screenshot: cover) {
+    .project-container-screenshot img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      transform: none;
+      object-fit: cover;
+    }
+  }
+  
+  /* Fin : Flexbox img & text */
+  
+  .project-container-screenshot {
+    display: flex;
+    flex-direction: column;
+    flex: 50%;
+    padding: 0.5em;
+    float: left;
+    align-items: center;
+  }
+  
+  .project-container-screenshot:nth-of-type(1) {
+    background: white;
+  }
+  
+  .project-container-screenshot:nth-of-type(2) {
+    background: white;
+    border-left: 1px solid #000000;
+  }
+  
+  .project-container-screenshot:nth-of-type(3) {
+    background: white;
+    border-top: 1px solid #000000;
+  }
+  
+  .project-container-screenshot:nth-of-type(4) {
+    background: white;
+    border-top: 1px solid #000000;
+    border-left: 1px solid #000000;
+  }
+  
+  #container-project2 .project-container-screenshot:nth-of-type(1) {
+    background: white;
+  }
+  
+  #container-project2 .project-container-screenshot:nth-of-type(2) {
+    background: white;
+    border-left: 1px solid white;
+  }
+  
+  #container-project2 .project-container-screenshot:nth-of-type(3) {
+    background: white;
+    border-top: 1px solid white;
+  }
+  
+  #container-project2 .project-container-screenshot:nth-of-type(4) {
+    background: white;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+  }
+  
+  .project-container-screenshot > img {
+    display: flex;
+    flex-direction: row;
+    max-height: 100%;
+    flex-shrink: 0;
+  }
+  
+  #projects a {
+    color: #2dc6b4;
+  }
+  
+  #contact .container-content {
+    flex-direction: column;
+    padding: 0 10rem;
+    align-items: center;
+  }
+  
+  #contact .container-form {
+    padding: 3% 0 3% 0;
+  }
+  
+  #contact .container-form input,
+  textarea {
+    border: 0.1px solid #c9c0c0;
+    width: 100%;
+  }
+  
+  #contact .container-form .contact-form {
+    width: 80%;
+    margin: auto;
+  }
+  
+  #contact .form-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+  
+  #contact #field01,
+  #field02 {
+    width: 45%;
+  }
+  
+  #field03 {
+    width: 100%;
+  }
+  
+  #field03 textarea {
+    height: 5em;
+  }
+  
+  #contact h3 {
+    text-transform: none;
+  }
+  
+  #form-button {
+    display: flex;
+    margin: auto;
+    border-radius: 10px;
+  }
+  
+  #form-button:hover {
+    color: #ffffff;
+    background-color: #000000;
+  }
+  
+  .button-content {
+    padding: 0.8em 1.5em;
+  }
+  
+  footer {
+    height: 100px;
+    margin-top: 5%;
+    background: #348feb;
+  }
+  
+  footer i,
+  footer a {
+    color: rgb(0, 0, 0);
+  }
+  
+  footer i:hover,
+  footer a:hover {
+    color: rgb(243, 250, 24);
+  }
+  
+  footer .wrapper {
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  footer .wrapper .container-social {
+    float: left;
+  }
+  
+  footer .wrapper .container-icons {
+    float: right;
+  }
+  
+  footer .wrapper .container-icons li {
+    display: inline-block;
+    margin-left: 2.5em;
+    list-style-type: none;
+  }
+  
+  @media only screen and (max-width: 426px) {
+    h1 {
+    }
+  
+    h2 {
+      font-size: 0.875rem;
+    }
+  
+    h3 {
+      font-size: 0.875rem;
+    }
+  
+    h4 {
+      font-size: 0.75rem;
+    }
+  
+    p,
+    label,
+    li,
+    .button-content {
+      font-size: 0.625rem;
+    }
+  
+    #skills .cols h3,
+    p {
+      font-size: 0.625rem;
+    }
+  
+    #projects #container-surfco-screenshot3,
+    #container-surfco-screenshot4,
+    #container-myquiver-screenshot2,
+    #container-myquiver-screenshot3 {
+      display: none;
+    }
+  
+    .container-project .container-img {
+      flex-direction: column;
+    }
+  
+    #container-project2 .container-img {
+      flex: 0 0 30%;
+    }
+  
+    #contact .container-content {
+      padding: 0 2.5rem;
+    }
+  
+    #logo {
+      height: auto;
+      width: 125px;
+    }
+  
+    main {
+      margin-top: 10px;
+    }
+  
+    section {
+      padding: 4rem 0 0 0;
+    }
+  
+    /* Début : Affichage de l'hamburger menu */
+  
+    /* Main menu positionning */
+    .main-nav {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      text-align: center;
+      background: #fff;
+      opacity: 0;
+      z-index: -1;
+      visibility: hidden;
+      transition: all 0.375s;
+    }
+  
+    .main-nav.is-open {
+      opacity: 1;
+      z-index: 100;
+      visibility: visible;
+    }
+  
+    /* Yellow band effect */
+    .main-nav::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: -15px;
+      background: #000000;
+      transform-origin: 0 0;
+      transform: skew(-14deg) translateX(-120%);
+      transition: all 0.275s 0.1s;
+    }
+  
+    .main-nav.is-open::before {
+      transform: skew(-14deg) translateX(0);
+    }
+  
+    /* Skewing effect on menu links */
+    .main-nav ul {
+      display: inline-flex;
+      flex-direction: column;
+      height: 93%; /* Should be 100%, but we have a notice message :D */
+      align-items: flex-end;
+      justify-content: center;
+      transform: translateX(-18%) skew(-16deg);
+    }
+  
+    .main-nav li {
+      display: block;
+      margin: 0.5rem 0;
+      text-align: right;
+      transform: skew(16deg);
+    }
+  
+    /* Apparition effect on links */
+    .main-nav a {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+  
+    .main-nav.is-open a {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .main-nav li:nth-child(1) a {
+      transition: all 275ms 175ms;
+    }
+    .main-nav li:nth-child(2) a {
+      transition: all 275ms 225ms;
+    }
+    .main-nav li:nth-child(3) a {
+      transition: all 275ms 275ms;
+    }
+    .main-nav li:nth-child(4) a {
+      transition: all 275ms 325ms;
+    }
+    .main-nav li:nth-child(5) a {
+      transition: all 275ms 375ms;
+    }
+  
+    /* Decoration */
+    .main-nav ul,
+    .main-nav li {
+      list-style: none;
+      padding: 0;
+    }
+    .main-nav a {
+      display: block;
+      padding: 12px 0;
+      color: #ffffff;
+      font-size: 1.4em;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  
+    /* Burger Style: @see: */
+    .open-main-nav {
+      position: absolute;
+      right: 15px;
+      padding: 0 8%;
+      z-index: 1000;
+      background: none;
+      border: 0;
+      cursor: pointer;
+    }
+    .open-main-nav:focus {
+      outline: none;
+    }
+    .burger {
+      position: relative;
+      display: block;
+      width: 28px;
+      height: 4px;
+      margin: 0 auto;
+      background: #ffffff;
+      transform: skew(5deg);
+      transition: all 0.275s;
+    }
+  
+    .burger:after,
+    .burger:before {
+      content: "";
+      display: block;
+      height: 100%;
+      background: #ffffff;
+      transition: all 0.275s;
+    }
+  
+    .burger:after {
+      transform: translateY(-12px) translateX(-2px) skew(-20deg);
+    }
+  
+    .burger:before {
+      transform: translateY(-16px) skew(-10deg);
+    }
+  
+    /* Toggle State part */
+    .is-open .burger {
+      transform: skew(5deg) translateY(-8px) rotate(-45deg);
+    }
+  
+    .is-open .burger:before {
+      transform: translateY(0px) skew(-10deg) rotate(75deg);
+    }
+  
+    .is-open .burger:after {
+      transform: translateY(-12px) translateX(10px) skew(-20deg);
+      opacity: 0;
+    }
+  
+    /* MENU Text part */
+  
+    .burger-text {
+      display: block;
+      font-size: 0.675rem;
+      letter-spacing: 0.05em;
+      margin-top: 0.5em;
+      text-transform: uppercase;
+      font-weight: 500;
+      text-align: center;
+      color: #ffffff;
+    }
+  
+    /* Fin : Affichage de l'hamburger menu */
+  
+    /* Nécessaire pour afficher l'hamburger car ne marche pas avec position fixed/stick */
+    header {
+      position: unset;
+    }
+  }
+  
+  @media only screen and (min-width: 426px) and (max-width: 769px) {
+    h1 {
+    }
+  
+    h2 {
+      font-size: 16px;
+    }
+  
+    h3 {
+      font-size: 16px;
+    }
+  
+    h4 {
+      font-size: 14px;
+    }
+  
+    p,
+    label,
+    li,
+    .button-content {
+      font-size: 12px;
+    }
+  
+    #skills .cols h3,
+    p {
+      font-size: 11.5px;
+    }
+  
+    #projects #container-surfco-screenshot3,
+    #container-surfco-screenshot4,
+    #container-myquiver-screenshot2,
+    #container-myquiver-screenshot3 {
+      display: none;
+    }
+  
+    .container-project .container-img {
+      flex-direction: column;
+    }
+  
+    #container-project2 .container-img {
+      flex: 0 0 30%;
+    }
+  
+    #contact .container-content {
+      padding: 0 2.5rem;
+    }
+  
+    /* Début : Affichage de l'hamburger menu */
+  
+    /* Main menu positionning */
+    .main-nav {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      text-align: center;
+      background: #fff;
+      opacity: 0;
+      z-index: -1;
+      visibility: hidden;
+      transition: all 0.375s;
+    }
+  
+    .main-nav.is-open {
+      opacity: 1;
+      z-index: 100;
+      visibility: visible;
+    }
+  
+    /* Yellow band effect */
+    .main-nav::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: -15px;
+      background: #000000;
+      transform-origin: 0 0;
+      transform: skew(-14deg) translateX(-120%);
+      transition: all 0.275s 0.1s;
+    }
+  
+    .main-nav.is-open::before {
+      transform: skew(-14deg) translateX(0);
+    }
+  
+    /* Skewing effect on menu links */
+    .main-nav ul {
+      display: inline-flex;
+      flex-direction: column;
+      height: 93%; /* Should be 100%, but we have a notice message :D */
+      align-items: flex-end;
+      justify-content: center;
+      transform: translateX(-18%) skew(-16deg);
+    }
+  
+    .main-nav li {
+      display: block;
+      margin: 0.5rem 0;
+      text-align: right;
+      transform: skew(16deg);
+    }
+  
+    /* Apparition effect on links */
+    .main-nav a {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+  
+    .main-nav.is-open a {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .main-nav li:nth-child(1) a {
+      transition: all 275ms 175ms;
+    }
+    .main-nav li:nth-child(2) a {
+      transition: all 275ms 225ms;
+    }
+    .main-nav li:nth-child(3) a {
+      transition: all 275ms 275ms;
+    }
+    .main-nav li:nth-child(4) a {
+      transition: all 275ms 325ms;
+    }
+    .main-nav li:nth-child(5) a {
+      transition: all 275ms 375ms;
+    }
+  
+    /* Decoration */
+    .main-nav ul,
+    .main-nav li {
+      list-style: none;
+      padding: 0;
+    }
+    .main-nav a {
+      display: block;
+      padding: 12px 0;
+      color: #ffffff;
+      font-size: 1.4em;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  
+    /* Burger Style: @see: */
+    .open-main-nav {
+      position: absolute;
+      padding: 0 8%;
+      right: 15px;
+      z-index: 1000;
+      background: none;
+      border: 0;
+      cursor: pointer;
+    }
+    .open-main-nav:focus {
+      outline: none;
+    }
+    .burger {
+      position: relative;
+      display: block;
+      width: 28px;
+      height: 4px;
+      margin: 0 auto;
+      background: #ffffff;
+      transform: skew(5deg);
+      transition: all 0.275s;
+    }
+  
+    .burger:after,
+    .burger:before {
+      content: "";
+      display: block;
+      height: 100%;
+      background: #ffffff;
+      transition: all 0.275s;
+    }
+  
+    .burger:after {
+      transform: translateY(-12px) translateX(-2px) skew(-20deg);
+    }
+  
+    .burger:before {
+      transform: translateY(-16px) skew(-10deg);
+    }
+  
+    /* Toggle State part */
+    .is-open .burger {
+      transform: skew(5deg) translateY(-8px) rotate(-45deg);
+    }
+  
+    .is-open .burger:before {
+      transform: translateY(0px) skew(-10deg) rotate(75deg);
+    }
+  
+    .is-open .burger:after {
+      transform: translateY(-12px) translateX(10px) skew(-20deg);
+      opacity: 0;
+    }
+  
+    /* MENU Text part */
+  
+    .burger-text {
+      display: block;
+      font-size: 0.675rem;
+      letter-spacing: 0.05em;
+      margin-top: 0.5em;
+      text-transform: uppercase;
+      font-weight: 500;
+      text-align: center;
+      color: #ffffff;
+    }
+  
+    /* Fin : Affichage de l'hamburger menu */
+  
+    /* Nécessaire pour afficher l'hamburger car ne marche pas avec position fixed/stick */
+    header {
+      position: unset;
+    }
+  }
+  
+  @media only screen and (min-width: 769px) and (max-width: 1025px) {
+    h1 {
+    }
+    h2 {
+      font-size: 20px;
+    }
+    h3 {
+      font-size: 20px;
+    }
+    h4 {
+      font-size: 16px;
+    }
+    p,
+    label,
+    li,
+    .button-content {
+      font-size: 14px;
+    }
+  
+    #burger {
+      display: none;
+    }
+  }
+  
+  @media only screen and (min-width: 1025px) {
+    #burger {
+      display: none;
+    }
+  }
+  
