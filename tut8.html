@@ -7,11 +7,11 @@
     <title>Forms</title>
 </head>
 <body>
-    <h2>This is HTML Forms tutorial</h2>
-    <form action="backend.php"></form>
+    <!-- <h2>This is HTML Forms tutorial</h2>
+    <form action="backend.php">
     <label for="name">Name</label>
     <div>
-        <input type="text" name="myName">    </div><br>
+        <input type="text" name="myName">    </div>
         <label for="role">Role</label>
     <div>
         <input type="text" name="myRole" id="role">    </div>
@@ -43,6 +43,46 @@
     <div>
         <input type="submit" value="Submit Now ">  
         <input type="reset" value="Reset Now">    </div>
+    </form>     -->
 
-</body>
+    <h1>Ashvin form Practice</h1>
+
+    <form action="backend.php" method="post" >
+    <label for="Mr">Mr</label>
+    <input type="radio" name="Gender" id="Mr" required>
+    <label for="Ms">Ms</label>
+    <input type="radio" name="Gender" id="Ms" required>
+    <label for="Mrs">Mrs</label>
+    <input type="radio"  name="Gender" id="Mrs" required><br>
+    
+    <label for="name">Name</label>
+    <input type="text" id="name" name="myName">
+    
+    <div>
+    <label for="email">Email</label>
+    <input type="text" id="email" name="myEmail" required>
+    </div>
+    <div>
+        <label for="email">Password</label>
+        <input type="password" id="Password" name="myPassword" required>
+    </div>    
+    <div>
+        <label for="car_type">Car Type</label>
+        <select name="car" id="car_ype" required>
+            <option value="swift">Swifr</option>
+            <option value="maruti">Maruti</option>
+            <option value="honda">Hinada</option>
+            <option value="hondabazuka">Bazuka</option>
+        </select>
+    </div>
+    <label for="information">WriteAbout YourSelf</label><br>
+    <textarea name="myText" id="informatrion" cols="30" rows="10"></textarea>
+
+    <br>
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+</form>
+<img src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg" alt="Nature Picture" width="200"><br>
+<img src="image.jpg" alt="remoteImage">
+</body>         
 </html>
