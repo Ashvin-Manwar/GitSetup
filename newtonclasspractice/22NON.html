@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+<style>
+    .parent{
+        display:flex;
+        flex-direction:row;
+        justify-content: flex-start;
+        background: lightcoral;
+        height: 600px;
+        /* flex-wrap: nowrap;
+        align-items: stretch;
+        align-content: stretch; */
+    }
+    .parent>div{
+        width: 75px;
+        height: 75px;
+        background: lightblue;
+        margin: 7px;
+
+    }
+</style>
+</head>
+<body>
+    <div class="parent">
+    <div>A</div>
+    <div>B</div>
+    <div>C</div>
+    <div>D</div>
+    <div>E</div>
+    <div class="main"></div>
+</div>
+</body>
+</html>
