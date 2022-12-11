@@ -6,16 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Position</title>
     <style>
-        border:2px solid red;
-        width:150px;
-        height: 150px; padding : 12px;
+        .container{
+            border: 2px solid black;
+            background-color: khaki;
+            height: 3444px;
+        }
+        /* CSS Position: static (default), relative, absolute, fixed, sticky */
+    .box{
+        display: inline-block;
+        border: 2px solid red;
+        width: 150px;
+        height: 150px;
+        margin: 2px;
+    }
+    #box3{
+        /* relative: Positions the element relative to its normal positon and will leave a gap at its normal position*/
+        /* position: relative; */
+        
+        /* absolute: Positions the element relative to the positon of its first parent*/
+        /* position: absolute; */
 
+        /* top: 34px;
+        left: 134px; */
+
+        /* fixed: Positions the element relative to the browser window; */
+        /* position: fixed;
+        right: 4px;
+        bottom: 2px */
+
+        /* sticky: Positions the element relative to the users scroll position */
+        position: sticky;
+        top: 3px;
+
+
+    }
     </style>
 </head>
 <body>
-    <div class="boc" id="box1"></div>
-    <div class="boc" id="box2"></div>
-    <div class="boc" id="box3"></div>
-    <div class="boc" id="box4"></div>
+   <div class="container">
+     <div class="boc" id="box1">1</div>
+     <div class="boc" id="box2">2</div>
+     <div class="boc" id="box3">3</div>
+     <div class="boc" id="box4">4</div>
+   </div>
 </body>
 </html>
