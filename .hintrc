@@ -9,6 +9,7 @@
         "select-name": "off",
         "label": "off"
       }
-    ]
+    ],
+    "button-type": "off"
   }
 }

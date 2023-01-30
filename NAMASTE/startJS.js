@@ -222,20 +222,22 @@
 
 //Named Function Expression
 //Difference btw Parameter & Argument ?
-// First Class Function
+// First Class Function-Ability tio be used  like values
 // Arrow Function
 
 //lec 14 call back
 //what is call back function in js
-setTimeout(function(){
-    console.log("timer")
-},5000)
- function x(y){
-    console.log("x")
-    y()
- }
- x(function y(){
-    console.log("y")
- })
+// setTimeout(function(){
+//     console.log("timer")
+// },5000)
+//  function x(y){
+//     console.log("x")
+//     y()
+//  }
+//  x(function y(){
+//     console.log("y")
+//  })
 
- //JS is a synchronous an dsingle threded language
+//  JS is a synchronous an dsingle threded language
+
+
