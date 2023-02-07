@@ -240,4 +240,15 @@
 
 //  JS is a synchronous an dsingle threded language
 
+// console.log("Start")
+// setTimeout(function cb(){
+//    console.log("Callback")
+// },5000)
+// console.log("END")
+
+console.log("Start")
+document.getElementById("btn").addEventListener("click",function cb(){ 
+   console.log("Callback")
+},5000)
+console.log("END")
 
