@@ -186,16 +186,133 @@
 // states[0]="Punjab"
 // console.log(states);
 
-var user=["ashvin","manwar.ashvin@gmail.com",2,34,true];
-console.log(user);
-
-user.pop();//ending element
-user.pop();
+// var user=["ashvin","manwar.ashvin@gmail.com",2,34,true];
 // console.log(user);
-user.unshift(" new value");
-// console.log(user);
-user.shift();
-console.log(user);
-console.log(user.indexOf(2));
 
-console.log(Array.from("Ashvin"));
+// user.pop();//ending element
+// user.pop();
+// // console.log(user);
+// user.unshift(" new value");
+// // console.log(user);
+// user.shift();
+// console.log(user);
+// console.log(user.indexOf(2));
+
+// console.log(Array.from("Ashvin"));
+
+//21 Callback and arrow functio
+
+// var isEven=(element) =>{
+// // if (element%2===0) {
+// //    return true;
+// // } 
+// // return false;
+
+// return element %2===0
+// }
+// // console.log(isEven(3));
+// // var result=[2,4,6,8].every(isEven)
+// var result=[2,4,6,8].every((e) =>{
+//    return e%2 ===0
+// })
+// // var result=[2,4,6,8].every((e)=> (e%2===0))
+// console.log(result);
+
+//22
+//  var testArray=[2,4,6,3,1,5,9,8]
+//  console.log(testArray.fill("H"));//(8) ['H', 'H', 'H', 'H', 'H', 'H', 'H', 'H']
+//  console.log(testArray.fill("H",2));// [2, 4, 'H', 'H', 'H', 'H', 'H', 'H']
+ 
+// console.log(testArray.fill("empty"));
+
+// const myNumber=[23,24,25,55,66,77,87,98]
+//  const result=myNumber.filter((num) =>num !=55);
+
+//  console.log(result);//[23, 24, 25, 66, 77, 87, 98]
+// var users=["Ashvin","rohit","tom","Sam","Sor"]
+// console.log(users.slice(1,3));
+// users.splice(1,2,"HI")
+// console.log(users);
+
+// 24 objects
+// var user={
+//    firstName:"Ashvin",
+//    lastName:"Manwar",
+//    role:"Admin",
+//    loginCount:32,
+//    facebookSignedIn:true
+// };
+// console.log(user.firstName);
+// console.log(user["lastName"]);
+// console.log(user.loginCount);
+// user.loginCount=44;
+// console.log(user.loginCount);
+// console.table(user)
+
+//25 Method and Objects
+// var user={
+//       firstName:"Ashvin",
+//       lastName:"Manwar",
+//        role:"Admin",
+//       loginCount:32,
+//       facebookSignedIn:true,
+//       courseList:[],
+//       buyCourse :function(courseName){
+//          this.courseList.push(courseName);
+//       },
+//       getCourseCount:function(){
+//          return `${this.firstName} is enrolled in total of ${this.courseList.length} courses`;
+//       },
+// };
+// var courseList=true;
+// console.log(user.firstName);
+// console.log(user.getCourseCount());
+// user.buyCourse("React JS course");
+// user.buyCourse("Angular JS course");
+// console.log(user.getCourseCount());
+//26
+// for (let i = 0; i <=10; i++) {
+//    console.log(i);   
+// }
+// const myState=["maha","delhi","Assam","Kerala",1998,"karnataka"];
+// for (let i = 0; i < myState.length; i++) {
+//    if (typeof myState[i] =="string") {
+//       continue;
+//    }
+//    console.log(myState[i]);  
+// }
+
+// let i=0;
+// while (i<myState.length) {
+   // console.log(myState[i]);
+   // i++;
+// }
+// for(;;){
+// if (i>3) {
+//    break;
+// }
+// console.log(i);
+// i++;
+// }
+
+// myState.forEach((s)=>(console.log(s)))
+// for (const n of myState) {
+   // console.log(n);}
+
+   //31
+   // console.log(this);
+   
+   // var user={
+   //    firstName :"Ashvin",
+   //    courseCount:4,
+   //    getCourseCount:function () {
+   //       console.log("LINE no 309",this);
+   //       function sayHello() {
+   //          console.log("HEllo");
+   //          console.log("LINE 312",this);
+            
+   //       }
+   //       sayHello();
+   //    },
+   // }
+   // user.getCourseCount();
