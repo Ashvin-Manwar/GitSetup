@@ -9,9 +9,11 @@
 function sumOne(a, b) {
     return a + b;
   }
+
+//   console.log(sumOne(5,8));//13
   
-  var myA = [5, 4];
-  //console.log(sumOne(...myA)); // spread Op
+//   var myA = [5, 4];
+//   console.log(sumOne(...myA)); // spread Op
   
   function sumTwo(a, b, ...args) {
     console.log(args);
